@@ -11,8 +11,8 @@ from azure.mgmt.resource import ResourceManagementClient
 # Set up Azure credentials
 credential = DefaultAzureCredential()
 
-subscription_id = "f1606b0e-419d-48d2-858a-21f7249e7f88"
-resource_group = "Recruiteze-Production"
+subscription_id = "your subscription "
+resource_group = "your subscription resource group"
 resource_uri = f"/subscriptions/{subscription_id}/resourceGroups/{resource_group}"
 
 # Set up Azure Cost Management client
@@ -22,7 +22,7 @@ cost_management_client = CostManagementClient(credential, subscription_id)
 monitor_client = MonitorManagementClient(credential, subscription_id)
 
 # Set up OpenAI API
-openai.api_key = "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"
+openai.api_key = "your open ai api key"
 def get_azure_cost_data():
     # Call Azure Cost Management API to get cost data
     # ...
@@ -93,6 +93,6 @@ if __name__ == "__main__":
     print(cost_summary)
     print("\nAzure Usage Data:")
     print(usage_summary)
-    print("\nOptimism Cloud Recommendations:")
+    print("\nFinOPsGPT Cloud Recommendations:")
     print(recommendations)
    

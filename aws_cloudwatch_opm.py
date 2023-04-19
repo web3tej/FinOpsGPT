@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 
 # Set up AWS connection
 session = boto3.Session(
-    aws_access_key_id="AKIAT4TUZVK5F3EWUPPL",
-    aws_secret_access_key="yxG8Ecy47eCvKywTiBatGMiUIKhtcHR9P2MLBcj1",
+    aws_access_key_id="<your access key id>",
+    aws_secret_access_key="<your secret access key",
     region_name="us-east-1"
 )
 
@@ -14,7 +14,7 @@ ce = session.client("ce")
 cw = session.client("cloudwatch")
 
 # Set up OpenAI API
-openai.api_key = "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"
+openai.api_key = "your Open AI API key"
 
 # Function to fetch AWS cost data
 def get_aws_cost_data():
@@ -86,5 +86,5 @@ if __name__ == "__main__":
     print(cost_summary)
     print("\nAWS Usage Data:")
     print(usage_summary)
-    print("\nOptimismCloud Recommendations:")
+    print("\nFinOps-GPT Recommendations:")
     print(recommendations)

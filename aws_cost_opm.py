@@ -4,15 +4,15 @@ import json
 
 # Set up AWS connection
 session = boto3.Session(
-    aws_access_key_id="AKIAT4TUZVK5F3EWUPPL",
-    aws_secret_access_key="yxG8Ecy47eCvKywTiBatGMiUIKhtcHR9P2MLBcj1",
+    aws_access_key_id="your access key id",
+    aws_secret_access_key="your secret access key",
     region_name="us-east-1"
 )
 
 ce = session.client("ce")
 
 # Set up OpenAI API
-openai.api_key = "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"
+openai.api_key = "your open AI key"
 
 # Function to fetch AWS cost data
 def get_aws_cost_data():
@@ -45,5 +45,5 @@ if __name__ == "__main__":
 
     print("AWS Cost Data:")
     print(cost_summary)
-    print("\nOptimism Cloud Recommendations:")
+    print("\nFinOPs GPT Recommendations:")
     print(recommendations)
