@@ -15,7 +15,7 @@ To get started with the project, follow these steps:
 git clone https://github.com/web3tej/FinOpsGPT.git
 
 
-2. Once the downloaded, you can add your AWS, Azure cloud environment related details and it also requires you to add your Open AI key to get the recommendations.
+2. Once downloaded, you can add your AWS, Azure cloud environment related details and it also requires you to add your Open AI key to get the recommendations.
 
 ## Contributing
 
@@ -30,3 +30,11 @@ NOTE: DO NOT SHARE OR ANY CLOUD CREDENTIALS instead add the instrucitons on what
 
 Please ensure that your code follows our coding standards and includes tests, if applicable.
 .
+
+## How to run it:
+
+You just need VS Code and Python installed.
+
+1. Once your keys are configured.
+2. Run the respective .py file and and follow on screen recommendations.
+3. Any issues you find, pls add it to the Issues section.
