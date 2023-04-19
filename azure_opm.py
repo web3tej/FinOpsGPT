@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from azure.mgmt.resource import ResourceManagementClient
 
 # Set up Azure credentials
+# your azure access details here, do not push the build with keys.
 credential = DefaultAzureCredential()
 
 subscription_id = "your subscription "

@@ -8,6 +8,7 @@ from msrestazure.azure_exceptions import CloudError
 from datetime import datetime, timedelta
 
 # Set up Azure credentials
+# your Azure access details here, do not push the build with keys.
 credential = DefaultAzureCredential()
 
 subscription_id = "your subscription ID"

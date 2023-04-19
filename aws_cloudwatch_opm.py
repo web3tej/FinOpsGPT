@@ -4,6 +4,7 @@ import json
 from datetime import datetime, timedelta
 
 # Set up AWS connection
+# your AWS access details here, do not push the build with keys.
 session = boto3.Session(
     aws_access_key_id="<your access key id>",
     aws_secret_access_key="<your secret access key",
